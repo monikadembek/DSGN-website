@@ -230,11 +230,10 @@ span.hamburgerLine::after {
 	display: inline-block;
 	position: relative;
 	top: -8px;
-	width: 120px;
+	width: 40px;
 	height: 2px;
 	margin-right: 20px;
 	background-color: #ffffff;
-
 }
 
 .topSectionTitle::after {
@@ -242,17 +241,16 @@ span.hamburgerLine::after {
 	display: inline-block;
 	position: relative;
 	top: -8px;
-	width: 120px;
+	width: 40px;
 	height: 2px;
 	margin-left: 20px;
 	background-color: #ffffff;
-
 }
 
 .mainSectionTitle {
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 700;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	line-height: 4.125rem;
 	text-transform: uppercase;
 	color: #ffffff;
@@ -284,6 +282,7 @@ span.hamburgerLine::after {
 	font-size: 1.75rem;
 	position: relative;
 	top: 90%;
+	color: #ffffff;
 }
 
 /* -------- stats section -------------*/
@@ -641,12 +640,12 @@ span.hamburgerLine::after {
 
 .mainFooter {
 	text-align: center;
-	color: #4a4a4a;
+	color: #606060;
 	background-color: #101010;
 }
 
 .mainFooter a {
-	color: #4a4a4a;
+	color: #606060;
 	transition: all 0.4s;
 }
 
@@ -711,6 +710,23 @@ span.hamburgerLine::after {
 
 
 /* ---------- media queries ------------*/
+
+
+@media (min-width: 480px) {
+
+	.topSectionTitle::before {
+		width: 120px;
+	}
+
+	.topSectionTitle::after {
+		width: 120px;
+	}
+
+	.mainSectionTitle {
+		font-size: 3.5rem;
+	}
+}
+
 
 @media (min-width: 768px) {
 	.mainHeader {
@@ -779,6 +795,10 @@ span.hamburgerLine::after {
 		font-weight: 300;
 		top: -15px;
 		left: 40px;
+	}
+
+	.mainMenuList {
+  		top: 80px;
 	}
 
 	.statsSection {
